@@ -27,10 +27,17 @@ export default function setSplitText() {
       para.split?.revert();
     }
 
+<<<<<<< HEAD
     // Avoid splitting into "lines" because line-measurement can be wrong while
     // ScrollSmoother/layout/fonts are still settling, which makes text look
     // artificially narrow ("compressed").
     const split = (para.split = new SplitText(para, { type: "words" }));
+=======
+    const split = (para.split = new SplitText(para, {
+      type: "lines,words",
+      linesClass: "split-line",
+    }));
+>>>>>>> origin/main
 
     para.anim = gsap.fromTo(
       split.words,
@@ -54,7 +61,14 @@ export default function setSplitText() {
       title.anim.progress(1).kill();
       title.split?.revert();
     }
+<<<<<<< HEAD
     const split = (title.split = new SplitText(title, { type: "chars" }));
+=======
+    const split = (title.split = new SplitText(title, {
+      type: "chars,lines",
+      linesClass: "split-line",
+    }));
+>>>>>>> origin/main
     title.anim = gsap.fromTo(
       split.chars,
       { autoAlpha: 0, y: 80, rotate: 10 },
@@ -73,4 +87,9 @@ export default function setSplitText() {
       }
     );
   });
+<<<<<<< HEAD
+=======
+
+  ScrollTrigger.addEventListener("refresh", () => setSplitText());
+>>>>>>> origin/main
 }

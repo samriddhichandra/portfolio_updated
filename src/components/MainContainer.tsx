@@ -9,7 +9,10 @@ import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Projects from "./Projects";
 import setSplitText from "./utils/splitText";
+<<<<<<< HEAD
 import AiMlRos from "./AiMlRos";
+=======
+>>>>>>> origin/main
 
 const TechStack = lazy(() => import("./TechStack"));
 
@@ -43,7 +46,10 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <About />
             <WhatIDo />
             <Career />
+<<<<<<< HEAD
             <AiMlRos />
+=======
+>>>>>>> origin/main
             <Projects />
             {isDesktopView && (
               <Suspense fallback={<div>Loading....</div>}>

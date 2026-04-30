@@ -5,10 +5,16 @@ import {
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
+<<<<<<< HEAD
 
 const SocialIcons = () => {
   const publicFileHref = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
 
+=======
+import HoverLinks from "./HoverLinks";
+
+const SocialIcons = () => {
+>>>>>>> origin/main
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
 
@@ -56,6 +62,7 @@ const SocialIcons = () => {
   }, []);
 
   return (
+<<<<<<< HEAD
     <>
       <div className="resume-buttons">
         <a
@@ -116,6 +123,37 @@ const SocialIcons = () => {
         </div>
       </div>
     </>
+=======
+    <div className="icons-section">
+      <div className="social-icons" data-cursor="icons" id="social">
+        <span>
+          <a href="https://github.com/samriddhichandra" target="_blank" rel="noreferrer">
+            <FaGithub />
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://linkedin.com/in/samriddhi-chandra"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedinIn />
+          </a>
+        </span>
+      </div>
+      <a
+        className="resume-button"
+        href="/Samriddhi_chandra.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <HoverLinks text="RESUME" />
+        <span>
+          <TbNotes />
+        </span>
+      </a>
+    </div>
+>>>>>>> origin/main
   );
 };
 

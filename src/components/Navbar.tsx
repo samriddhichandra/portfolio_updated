@@ -6,11 +6,18 @@ import HoverLinks from "./HoverLinks";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+<<<<<<< HEAD
+=======
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+>>>>>>> origin/main
 export let smoother: ScrollSmoother;
 
 const Navbar = () => {
   useEffect(() => {
+<<<<<<< HEAD
     smoother?.kill();
+=======
+>>>>>>> origin/main
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",
@@ -24,6 +31,7 @@ const Navbar = () => {
     smoother.scrollTop(0);
     smoother.paused(true);
 
+<<<<<<< HEAD
     const links = Array.from(
       document.querySelectorAll<HTMLAnchorElement>(".header ul a")
     );
@@ -51,6 +59,23 @@ const Navbar = () => {
       window.removeEventListener("resize", onResize);
       smoother?.kill();
     };
+=======
+    let links = document.querySelectorAll(".header ul a");
+    links.forEach((elem) => {
+      let element = elem as HTMLAnchorElement;
+      element.addEventListener("click", (e) => {
+        if (window.innerWidth > 1024) {
+          e.preventDefault();
+          let elem = e.currentTarget as HTMLAnchorElement;
+          let section = elem.getAttribute("data-href");
+          smoother.scrollTo(section, true, "top top");
+        }
+      });
+    });
+    window.addEventListener("resize", () => {
+      ScrollSmoother.refresh(true);
+    });
+>>>>>>> origin/main
   }, []);
   return (
     <>
@@ -75,11 +100,14 @@ const Navbar = () => {
             </a>
           </li>
           <li>
+<<<<<<< HEAD
             <a data-href="#aiml" href="#aiml">
               <HoverLinks text="AI/ML" />
             </a>
           </li>
           <li>
+=======
+>>>>>>> origin/main
             <a data-href="#contact" href="#contact">
               <HoverLinks text="CONTACT" />
             </a>
