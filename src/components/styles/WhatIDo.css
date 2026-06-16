@@ -213,11 +213,7 @@
   opacity: 0.5;
   font-size: 12px;
   letter-spacing: 1px;
-<<<<<<< HEAD
   font-family: var(--font-sans);
-=======
-  font-family: "Geist", sans-serif;
->>>>>>> origin/main
   margin-bottom: 5px;
 }
 @keyframes whatBorders {

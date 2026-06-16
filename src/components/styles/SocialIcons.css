@@ -43,7 +43,6 @@
   will-change: left, top;
   transition: transform 0.3s ease-out;
 }
-<<<<<<< HEAD
 .resume-buttons {
   position: fixed;
   top: 22px;
@@ -89,36 +88,6 @@
   background: rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: #7fe5ff;
-=======
-.resume-button {
-  position: absolute;
-  z-index: 99;
-  display: flex;
-  gap: 5px;
-  bottom: 40px;
-  right: 0;
-  width: auto;
-  text-wrap: nowrap;
-  letter-spacing: 4px;
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: 600;
-  color: #5e5e5e;
-  cursor: pointer;
-  transition: 0.5s;
-  transform-origin: left bottom;
-  transform: translateX(100%) rotateZ(-90deg);
-}
-.resume-button:hover {
-  color: #fff;
-}
-div.resume-button span {
-  color: #fff;
-  font-size: 17px;
-  margin-top: -1px;
-  display: flex;
-  align-items: center;
->>>>>>> origin/main
 }
 .check-line {
   position: fixed;
@@ -139,7 +108,6 @@ div.resume-button span {
   }
 }
 @media only screen and (min-width: 768px) {
-<<<<<<< HEAD
   .resume-buttons {
     top: 28px;
     right: 30px;
@@ -154,15 +122,5 @@ div.resume-button span {
   .resume-pill__icon {
     width: 30px;
     height: 30px;
-=======
-  .resume-button {
-    transform: none;
-    font-size: 20px;
-    line-height: 20px;
-  }
-  div.resume-button span {
-    font-size: 23px;
-    margin-top: -1.5px;
->>>>>>> origin/main
   }
 }

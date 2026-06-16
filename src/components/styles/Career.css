@@ -26,11 +26,7 @@
   margin-bottom: 90px;
 }
 .career-section h2 > span {
-<<<<<<< HEAD
   font-family: var(--font-sans);
-=======
-  font-family: "Geist", sans-serif;
->>>>>>> origin/main
   font-weight: 300;
 }
 .career-info {
